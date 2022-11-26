@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Congelados Sorveteria</title>
+</head>
+
+<body class="dark-bg">
+
+    <header class="header container">
+        <div class="banner-top">
+
+            <h1 class="logo-title"><span class="logo-title-span"></span>Congelados </h1>
+            <i class="fa fa-ice-cream"></i>
+
+        </div>
+    </header>
+
+    <div class="container-settings container">
+        <select name="language" id="language">
+            <option value="Portuguese">Português (Brasil)</option>
+            <option value="English">English (US)</option>
+        </select>
+        <div class="theme-toggle">
+            <input type="checkbox" class="checkbox-toggle" id="checkbox-toggle" data-theme="toggle">
+            <label for="checkbox-toggle" class="label-toggle">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <div class="ball-toggle"></div>
+            </label>
+        </div>
+    </div>
+
+    <main class="main container" id="main">
+        <!-- ice cream data here -->
+    </main>
+
+    <section class="container">
+        <div class="container-order">
+            <h2 class="order-title">Seu Pedido</h2>
+            <div id="order">
+                <!--User Order here-->
+            </div>
+            <div class="container-total">
+                <p class="total-price-title">Total</p>
+                <p class="total-price-value" id="total-price-value">
+                    R$ 0.00
+                </p>
+            </div>
+        </div>
+        <button class="complete-order-btn" id="complete-order-btn">Continue</button>
+    </section>
+
+    <!--Modal 1-->
+    <dialog id="order-modal" class="order-modal">
+        <!--Text after click in button CONTINUE-->
+        <div id="container-modal-text">
+
+        </div>
+        <div class="container-total" id="order-total-price-modal">
+            <p class="total-price-title">Total</p>
+            <p class="total-price-value" id="total-price-value-modal">
+                R$ 0.00
+            </p>
+        </div>
+        <div class="container-close-modal-btn" id="container-btn-modal">
+            <button id="confirm-btn-modal" class="close-modal-btn btn-width">Avançar</button>
+            <button id="back-btn-modal" class="close-modal-btn btn-width">Voltar</button>
+        </div>
+    </dialog>
+
+    <!--Modal 2-->
+    <dialog id="order-modal-image" class="order-modal">
+        <!--Animated Gif-->
+    </dialog>
+
+    <!--Modal 3-->
+    <dialog id="final-message-modal" class="order-modal">
+        <div class="final-message-container" id="final-message-container">
+            <!--Thank you message-->
+        </div>
+
+        <div class="container-close-modal-btn flex-direction-column">
+            <button class="close-modal-btn" id="end-order-new">Novo Pedido</button>
+            <button class="close-modal-btn" id="end-order-close">Fechar</button>
+
+            <!--Contact Me-->
+            <div class="container-network">
+                <a href="https://www.linkedin.com/in/ítalo-vale-878b7b228" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ValeItalo" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="attribution">
+        <p>Images from <a href="http://www.freepik.com" target="_blank"><span>Freepik.</span></a></p>
+        <p>Coded by <a href="https://github.com/ValeItalo" target="_blank"><span>Ítalo Vale</span></a></p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
