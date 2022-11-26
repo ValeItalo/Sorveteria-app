@@ -22,7 +22,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Marhey', cursive;
     text-shadow: 3px 3px 3px var(--blue);
     user-select: none;
@@ -82,9 +82,13 @@ body {
     flex-direction: column;
 }
 
-.container {
-    min-width: 21.8em;
+.container.amount {
+    min-width: 20em;
     max-width: 46.8em;
+}
+
+.container section {
+    padding: 2em;
 }
 
 .header {
@@ -112,14 +116,6 @@ body {
 
 .logo-title-span {
     font-size: 1.5rem;
-}
-
-.navbar {
-    display: none;
-}
-
-.navbar-ul {
-    list-style: none;
 }
 
 .fa-ice-cream {
@@ -192,16 +188,16 @@ select {
 .container-iceCream {
     display: flex;
     align-items: flex-start;
-    min-height: 12.5em;
-    width: 100%;
-    padding-block: 0;
-    margin-top: 0;
+    min-width: 18em;
+    max-width: 100%;
+    padding-left: 2em;
+    padding-bottom: 2em;
     border-bottom: 2px dotted var(--blue);
 }
 
 .iceCream-title {
-    margin-top: 2em;
-    margin-left: 10.9em;
+    padding: 0 2em;
+    margin: 0;
 }
 
 .iceCream-title-description {
@@ -280,7 +276,7 @@ select {
 
 .container-order {
     margin-top: 2.5em;
-    min-width: 400px;
+    min-width: 20em;
     max-width: 750px;
 }
 
@@ -318,7 +314,6 @@ select {
     font-style: italic;
     font-weight: 700;
     align-self: flex-end;
-
 }
 
 .order-remove-btn:hover,
@@ -508,33 +503,28 @@ select {
     text-decoration: underline;
 }
 
-
-@media(min-width: 300px) {
-
-    .container-iceCream {
-        align-items: flex-start;
-    }
-
-    .container-iceCream-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .container-btn-plus-minus {
-        justify-content: left;
-    }
-
-    .iceCream-title-description {
-        margin-top: 1em;
-    }
+.container-iceCream-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.container-btn-plus-minus {
+    justify-content: left;
+}
+
+.iceCream-title-description {
+    margin-top: 1em;
+}
+
+/* } */
 
 @media(min-width: 620px) {
 
     .container-iceCream {
         align-items: center;
         min-height: 250px;
+        padding-left: 0;
     }
 
     .margin-top-zero {
@@ -550,8 +540,12 @@ select {
     }
 
     .container {
-        min-width:31em;
+        min-width: 31em;
         max-width: 46.8em;
+    }
+
+    .container section {
+        padding: 0;
     }
 
     .container-btn-plus-minus {

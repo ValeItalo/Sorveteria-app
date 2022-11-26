@@ -73,7 +73,7 @@ function getIceCreamHtml() {
         }
 
         iceCreamHTML += `
-        <section>
+        <section class="container-obj">
         <h3 class="iceCream-title">Gelado<span class="iceCream-title-span">${iceCream.name}</span>
         </h3>
         <div class="container-iceCream">
