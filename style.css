@@ -83,8 +83,8 @@ body {
 }
 
 .container {
-    min-width: 350px;
-    max-width: 750px;
+    min-width: 21.8em;
+    max-width: 46.8em;
 }
 
 .header {
@@ -192,7 +192,7 @@ select {
 .container-iceCream {
     display: flex;
     align-items: flex-start;
-    height: 200px;
+    min-height: 12.5em;
     width: 100%;
     padding-block: 0;
     margin-top: 0;
@@ -201,7 +201,7 @@ select {
 
 .iceCream-title {
     margin-top: 2em;
-    margin-left: 175px;
+    margin-left: 10.9em;
 }
 
 .iceCream-title-description {
@@ -289,7 +289,7 @@ select {
     padding-bottom: 1em;
     margin-bottom: 1em;
     border-bottom: 2px solid var(--dark-pink);
-    min-width: 400px;
+    min-width: 18em;
 }
 
 .order-title,
@@ -349,7 +349,7 @@ select {
     left: 0;
     margin: auto;
     min-width: 360px;
-    width: 550px;
+    width: 33em;
     padding: 2em;
     border: none;
     background-color: var(--brown);
@@ -371,8 +371,8 @@ select {
 .container-modal-btn {
     display: flex;
     justify-content: space-evenly;
-    min-width: 360px;
-    max-width: 700px
+    min-width: 22em;
+    max-width: 42em
 }
 
 .container-modal-btn button {
@@ -466,7 +466,7 @@ select {
 .container-close-modal-btn {
     display: flex;
     justify-content: space-around;
-    max-width: 360px;
+    max-width: 22em;
     margin: 0 auto;
 }
 
@@ -534,7 +534,7 @@ select {
 
     .container-iceCream {
         align-items: center;
-        height: 250px;
+        min-height: 250px;
     }
 
     .margin-top-zero {
@@ -550,8 +550,8 @@ select {
     }
 
     .container {
-        min-width: 500px;
-        max-width: 750px;
+        min-width:31em;
+        max-width: 46.8em;
     }
 
     .container-btn-plus-minus {
