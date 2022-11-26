@@ -61,9 +61,11 @@ select,
 
 body {
     font-family: 'Quicksand', sans-serif;
-    padding: 2em;
+    padding: 1em;
     flex-direction: column;
     background-color: #FFFAFA;
+    display: flex;
+    justify-content: center;
 }
 
 .dark-bg {
@@ -82,13 +84,17 @@ body {
     flex-direction: column;
 }
 
-.container.amount {
-    min-width: 20em;
+.container {
+    padding: 1em;
+    min-width: 18.5em;
     max-width: 46.8em;
 }
 
 .container section {
-    padding: 2em;
+    min-width: 18.5em;
+    padding: 2em 1em;
+    padding-inline: 0 ;
+    max-width: 100%;
 }
 
 .header {
@@ -97,9 +103,12 @@ body {
     text-align: justify;
     width: 100%;
     height: 14em;
+    min-width: 18.5em;
+    max-width: 46.8em;
     background: black;
     background-image: url(./assets/sorvete-background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 }
 
@@ -121,7 +130,7 @@ body {
 .fa-ice-cream {
     font-size: 3rem;
     text-shadow: 3px 3px 3px var(--blue);
-    margin-inline: .2em;
+    margin-left: .2em;
     transform: rotate(45deg);
 }
 
@@ -188,15 +197,15 @@ select {
 .container-iceCream {
     display: flex;
     align-items: flex-start;
-    min-width: 18em;
-    max-width: 100%;
-    padding-left: 2em;
+    align-self: center;
+    max-width: 22em;
+    padding-left: .5em;
     padding-bottom: 2em;
     border-bottom: 2px dotted var(--blue);
 }
 
 .iceCream-title {
-    padding: 0 2em;
+    padding-inline: .5em;
     margin: 0;
 }
 
@@ -225,6 +234,8 @@ select {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: .5em;
+    margin-right: auto;
+    text-align: left;
 }
 
 .iceCream-title-span {
@@ -273,11 +284,14 @@ select {
     text-align: center;
     color: var(--dark-pink);
 }
+.container-obj {
+    display: flex;
+    flex-direction: column;
 
+}
 .container-order {
-    margin-top: 2.5em;
     min-width: 20em;
-    max-width: 750px;
+    max-width: 46.8em;
 }
 
 .order {
@@ -286,6 +300,7 @@ select {
     margin-bottom: 1em;
     border-bottom: 2px solid var(--dark-pink);
     min-width: 18em;
+    position: relative;
 }
 
 .order-title,
@@ -314,6 +329,9 @@ select {
     font-style: italic;
     font-weight: 700;
     align-self: flex-end;
+    position: absolute;
+    top: 25px;
+    left: -5px;
 }
 
 .order-remove-btn:hover,
@@ -343,9 +361,8 @@ select {
     bottom: 0;
     left: 0;
     margin: auto;
-    min-width: 360px;
-    width: 33em;
-    padding: 2em;
+    width: 21em;
+    padding: 1em;
     border: none;
     background-color: var(--brown);
     background-color: #202b47;
@@ -357,9 +374,9 @@ select {
 
 .order-modal img {
     display: block;
-    min-width: 360px;
-    max-width: 50%;
-    margin-inline: auto;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 0 auto;
     object-fit: contain;
 }
 
@@ -391,6 +408,10 @@ select {
     font-style: italic;
     color: var(--pink);
     display: block;
+}
+
+.container-modal-text {
+    background-color: lightseagreen;
 }
 
 .container-total {
@@ -433,7 +454,7 @@ select {
 }
 
 .final-message-container img {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .final-message-title {
@@ -517,14 +538,13 @@ select {
     margin-top: 1em;
 }
 
-/* } */
-
 @media(min-width: 620px) {
 
     .container-iceCream {
         align-items: center;
         min-height: 250px;
         padding-left: 0;
+        max-width: 46.8em;
     }
 
     .margin-top-zero {
@@ -546,6 +566,7 @@ select {
 
     .container section {
         padding: 0;
+        width: 100%;
     }
 
     .container-btn-plus-minus {
@@ -562,5 +583,11 @@ select {
 
     .container-iceCream-content {
         padding-bottom: 2em;
+    }
+
+    .order-remove-btn { 
+        position: relative;
+        top: 0px;
+        left: 0px;
     }
 }
