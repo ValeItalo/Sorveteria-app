@@ -28,6 +28,10 @@ h1 {
     user-select: none;
 }
 
+h3 {
+    margin-top: 0;
+}
+
 p {
     line-height: 1.4;
     letter-spacing: 1.2px;
@@ -85,16 +89,15 @@ body {
 }
 
 .container {
-    padding: 1em;
     min-width: 18.5em;
     max-width: 46.8em;
 }
 
 .container section {
     min-width: 18.5em;
-    padding: 2em 1em;
-    padding-inline: 0;
     max-width: 100%;
+    padding: 1em 0;
+    width: 100%;
 }
 
 .header {
@@ -140,11 +143,12 @@ body {
     font-weight: 500;
     gap: 15px;
     margin-top: 1em;
-    padding-top: .7em;
+    padding: 0;
     width: 100%;
-    border-radius: 2em;
+    max-width: 46.8em;
     position: relative;
 }
+
 
 select,
 option {
@@ -198,7 +202,7 @@ select {
     display: flex;
     align-items: flex-start;
     align-self: center;
-    max-width: 22em;
+    max-width: 100%;
     padding-left: .5em;
     padding-bottom: 2em;
     border-bottom: 2px dotted var(--blue);
@@ -247,6 +251,7 @@ select {
     margin-bottom: .5em;
     margin-right: 1em;
     color: var(--dark-pink);
+    max-width: 60%;
 }
 
 .iceCream-price {
@@ -283,12 +288,6 @@ select {
     font-weight: 700;
     text-align: center;
     color: var(--dark-pink);
-}
-
-.container-obj {
-    display: flex;
-    flex-direction: column;
-
 }
 
 .container-order {
@@ -335,6 +334,8 @@ select {
     top: 25px;
     left: -5px;
 }
+
+
 
 .order-remove-btn:hover,
 .order-remove-btn:focus {
@@ -556,7 +557,6 @@ select {
     .container-iceCream-content {
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-top: 1em;
         justify-content: space-between;
         width: 100%;
     }
@@ -567,7 +567,6 @@ select {
     }
 
     .container section {
-        padding: 0;
         width: 100%;
     }
 
@@ -575,11 +574,21 @@ select {
         justify-content: right;
     }
 
+    .iceCream-img {
+        margin-right: 1.5em;
+        border-radius: 1em;
+        height: 160px;
+        width: 160px;
+    }
+
+
     .iceCream-title {
         display: none;
     }
 
     .iceCream-title-description {
+        font-size: 1.3rem;
+
         display: block;
     }
 
@@ -587,9 +596,8 @@ select {
         padding-bottom: 2em;
     }
 
-    .order-remove-btn {
-        position: relative;
-        top: 0px;
-        left: 0px;
+    .iceCream-description {
+        font-size: 1.1rem;
+        max-width: 100%;
     }
 }
