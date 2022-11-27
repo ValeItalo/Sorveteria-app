@@ -93,7 +93,7 @@ body {
 .container section {
     min-width: 18.5em;
     padding: 2em 1em;
-    padding-inline: 0 ;
+    padding-inline: 0;
     max-width: 100%;
 }
 
@@ -284,11 +284,13 @@ select {
     text-align: center;
     color: var(--dark-pink);
 }
+
 .container-obj {
     display: flex;
     flex-direction: column;
 
 }
+
 .container-order {
     min-width: 20em;
     max-width: 46.8em;
@@ -585,7 +587,7 @@ select {
         padding-bottom: 2em;
     }
 
-    .order-remove-btn { 
+    .order-remove-btn {
         position: relative;
         top: 0px;
         left: 0px;
