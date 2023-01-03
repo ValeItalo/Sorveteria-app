@@ -36,7 +36,6 @@ let orderArray = []
 document.addEventListener('click', function (e) {
 
     if (e.target.dataset.theme) {
-        console.log('themou')
         document.body.classList.toggle('dark-bg')
     }
 
